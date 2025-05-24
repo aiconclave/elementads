@@ -1,0 +1,133 @@
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top-left-icons {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+    font-size: 1.8rem;
+    color: #222;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.site-footer {
+    background: linear-gradient(90deg, #232526 0%, #414345 100%);
+    color: #fff;
+    padding: 16px 24px 40px 24px; /* Reduced top padding */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 1rem;
+    margin-top: 0;
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.12);
+    gap: 32px;
+    min-height: 220px; /* Added minimum height */
+}
+
+.site-footer h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #ffd700;
+}
+
+.site-footer a {
+    color: #ffd700;
+    margin-right: 12px;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-size: 1.1em;
+}
+
+.site-footer a:hover {
+    color: #fff;
+    text-shadow: 0 0 6px #ffd70077;
+}
+
+.footer-contact, .footer-info {
+    min-width: 200px;
+    margin-bottom: 10px;
+}
+
+.footer-contact p, .footer-info p {
+    margin: 8px 0;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+.footer-contact i, .footer-info i {
+    margin-right: 10px;
+    color: #ffd700;
+}
+
+.footer-newsletter {
+    min-width: 220px;
+    margin-bottom: 10px;
+}
+
+.footer-newsletter input[type="email"] {
+    width: 140px;
+    margin-right: 6px;
+}
+
+.footer-newsletter button {
+    background: #ffd700;
+    color: #232526;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.footer-newsletter button:hover {
+    background: #fff;
+    color: #232526;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    img {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .site-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1rem;
+        border-radius: 0;
+        gap: 0;
+        padding: 24px 8px 16px 8px;
+    }
+    .footer-contact, .footer-info {
+        width: 100%;
+        margin-bottom: 18px;
+    }
+}
+
+/* Remove whitespace between images and footer */
+a:last-of-type img {
+    margin-bottom: 0;
+}
+

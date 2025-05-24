@@ -4,6 +4,10 @@ img {
     display: block;
     margin-bottom: 0;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 
 body {
     margin: 0;
@@ -130,4 +134,5 @@ body {
 a:last-of-type img {
     margin-bottom: 0;
 }
+
 
